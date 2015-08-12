@@ -83,7 +83,7 @@
           <section id="Main"><h1>humble-localstorage</h1>
 <blockquote>
 <p>wraps localStorage and adds .getObject(), .setObject(), .isPersistent</p></blockquote>
-<p><a href="https://travis-ci.org/gr2m/humble-localstorage/"><img src="https://travis-ci.org/gr2m/humble-localstorage.png?branch=master" alt="Build Status"></a></p><p><code>localStorage</code> is a simple key/value store API for browsers, perfectly<br />suited to store little amount of data like configurations.</p><p><code>humbleLocalStorage</code> provides additional APIs to store / retrieve<br />JSON objects, and also handles several circumstances in which Browsers<br />do not support or persist localStorage (e.g. private modes,<br />Cookies disabled, etc).</p><p>In case data cannot be persisted in localStorage,  <code>humbleLocalStorage</code><br />falls back to in-memory storage. To determine if data is being persisted,<br />use <code>humbleLocalStorage.isPersistent</code> property.</p><h2>Installation</h2>
+<p><a href="https://travis-ci.org/gr2m/humble-localstorage/"><img src="https://travis-ci.org/gr2m/humble-localstorage.png?branch=master" alt="Build Status"></a><br /><a href="https://david-dm.org/gr2m/humble-localstorage"><img src="https://david-dm.org/gr2m/humble-localstorage.svg" alt="Dependencies Status"></a><br /><a href="https://david-dm.org/gr2m/humble-localstorage#info=devDependencies"><img src="https://david-dm.org/gr2m/humble-localstorage/dev-status.svg" alt="devDependency Status"></a></p><p><code>localStorage</code> is a simple key/value store API for browsers, perfectly<br />suited to store little amount of data like configurations.</p><p><code>humbleLocalStorage</code> provides additional APIs to store / retrieve<br />JSON objects, and also handles several circumstances in which Browsers<br />do not support or persist localStorage (e.g. private modes,<br />Cookies disabled, etc).</p><p>In case data cannot be persisted in localStorage,  <code>humbleLocalStorage</code><br />falls back to in-memory storage. To determine if data is being persisted,<br />use <code>humbleLocalStorage.isPersistent</code> property.</p><h2>Installation</h2>
 <ul>
 <li>Download: <a href="https://github.com/gr2m/humble-localstorage/releases">https://github.com/gr2m/humble-localstorage/releases</a></li>
 <li>or: install via Bower: <code>bower install -S humble-localstorage</code></li>
@@ -101,7 +101,14 @@ humbleLocalStorage.getObject(&#39;mykey&#39;) // JSON value or null
 humbleLocalStorage.setObject(&#39;mykey&#39;, {foo: &#39;bar&#39;}) // stored as &#39;{&quot;foo&quot;: &quot;bar&quot;}&#39;
 humbleLocalStorage.isPersistent // true if data persists page reload, false if not
 </code></pre>
-<h2>License</h2>
+<h2>Run tests</h2>
+<pre><code># see all available tasks
+npm run
+
+# run unit &amp; integration tests
+# note: selenium must be running
+npm test
+</code></pre><h2>License</h2>
 <p>MIT</p></section>
         </div>
       </div>
